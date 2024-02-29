@@ -10,5 +10,15 @@ public class Main {
         expected = 500;
         actual = service.calculate( 1_000_000, true);
         System.out.println(expected + " == ? == " + actual);
+
+        expected = 50;
+        actual = service.calculate( 5000, false);
+        System.out.println(expected + " == ? == " + actual);
+
+        expected = 500;
+        actual = service.calculate( 1_000_000, false);
+        System.out.println(expected + " == ? == " + actual);
+
+
     }
 }
